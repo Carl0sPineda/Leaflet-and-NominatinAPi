@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mapas Leaflet y Nominatim API</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"
+    />
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+
+  <body>
+    <h1><u> Leaflet y Nominatim Api </u></h1>
+    <div id="mapid"></div>
+    <div class="container">
+      <p>Latitud: <span class="location" id="lat"></span></p>
+      <p>Longitud: <span class="location" id="lng"> </span></p>
+      <p>
+        Dirección:
+        <span class="location" id="dir"></span>
+      </p>
+    </div>
+    <hr style="margin-top: 40px" />
+    <h2 style="margin-top: 40px">
+      Objeto JSON con la información Nominatim API
+    </h2>
+    <div id="info" class="info-container"></div>
+    <script type="module" src="./js/map.js"></script>
+  </body>
+</html>
